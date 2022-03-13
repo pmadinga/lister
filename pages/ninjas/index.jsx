@@ -1,16 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import styles from '../../styles/Ninjas.module.css'
-export const getStaticProps = async () => {
-
-    const res = await fetch('https://jsonplaceholder.typicode.com/users');
-
-    const data = await res.json();
-
-    return {
-        props: {ninjas: data}
-    }
-}
+import styles from '../../styles/Ninjas.module.css';
 
 const Ninjas = ({ninjas}) => {
     // console.log(ninjas);
@@ -35,6 +25,13 @@ const Ninjas = ({ninjas}) => {
             </div>
         </>
     );
-}
+};
 
 export default Ninjas;
+export const getStaticProps = async () => {
+    const res = await fetch('https://jsonplaceholder.typicode.com/users');
+    const data = await res.json();
+    return {
+        props: {ninjas: data}
+    };
+};

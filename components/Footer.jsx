@@ -3,5 +3,5 @@ export default function Footer() {
     <footer>
         Copyright &copy; 2022
     </footer>
-  )
+  );
 }
