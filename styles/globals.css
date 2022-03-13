@@ -35,3 +35,10 @@ footer {
   color: #777;
   border-top: 1px solid #eaeaea;
 }
+.not-found{
+  text-align: center;
+}
+.not-found a{
+  counter-reset: #4979ff!important;
+  text-decoration: underline;
+}
