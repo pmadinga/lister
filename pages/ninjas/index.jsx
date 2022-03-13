@@ -1,10 +1,17 @@
+import Head from 'next/head';
 import React from 'react';
 
 const Ninjas = () => {
     return (
-        <div>
-            <h1>All ninjas</h1>
-        </div>
+        <>  
+            <Head>
+                <title>Lister | Ninjas</title>
+                <meta name="keywords" content="Ninjas" />
+            </Head>
+            <div>
+                <h1>All ninjas</h1>
+            </div>
+        </>
     );
 }
 
