@@ -8,9 +8,9 @@ const NotFound = () => {
 
     useEffect(() =>{
         setTimeout(() => {
-            router.push('/')
-        }, 3000)
-    }, [router])
+            router.push('/');
+        }, 3000);
+    }, [router]);
 
     return (
         <div className='not-found'>
@@ -20,6 +20,6 @@ const NotFound = () => {
             <Link href={'/'}><a>Go to home</a></Link>
         </div>
     );
-}
+};
 
 export default NotFound;
